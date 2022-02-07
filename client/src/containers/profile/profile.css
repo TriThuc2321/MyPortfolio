@@ -1,0 +1,57 @@
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    margin-left: 80px;
+}
+
+.profileImg{
+    width: 40rem;
+    margin-top: 50px;
+}
+
+.text p{
+    color: white;
+    
+    font-family: 'The Nautigal', cursive;
+    font-size: 80px;
+}
+
+.text p2{
+    color: white;
+    font-family: var(--font-family);
+    font-size: 30px;
+}
+
+.text p3{
+    color: white;
+    font-family: var(--font-family);
+    font-size: 20px;
+}
+
+.major {
+    background: var(--gradient-text);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    font-family: var(--font-family);
+    font-size: 20px;
+}
+
+.get_resume button {
+    margin-top: 10px;
+    padding: 0.5rem 1.5rem;
+    color: #fff;
+    background-color: #FF4820;
+    font-family: var(--font-family);
+    font-size: 18;
+    font-weight: 500;
+    line-height: 25px;
+    border-radius: 25px;
+    border:0;
+    outline: none;
+    cursor: pointer;
+
+}
