@@ -6,6 +6,9 @@
 }
 *{
     box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
 }
 
 html{
@@ -14,4 +17,9 @@ html{
 
 body{
     font-family: 'Roboto', sans-serif;
+}
+
+a {
+    color: unset;
+    text-decoration: none;
 }
