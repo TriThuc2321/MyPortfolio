@@ -1,9 +1,11 @@
 @import 'normalize.css';
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300&display=swap');
 
 :root{
-
+    --default-layout-header-height: 80px
 }
+
 *{
     box-sizing: border-box;
     padding: 0;

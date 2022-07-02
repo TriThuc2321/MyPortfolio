@@ -1,7 +1,17 @@
+import Project from './Components/Project';
+import Top from './Components/Top';
+import About from './Components/About';
+
+import classNames from 'classnames/bind';
+import styles from './Home.module.scss';
+const cx = classNames.bind(styles);
+
 function Home() {
     return (
-        <div>
-            <h2>Home</h2>
+        <div className={cx('container')}>
+            <Top />
+            <About />
+            <Project />
         </div>
     );
 }

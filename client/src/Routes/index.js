@@ -1,5 +1,5 @@
 import { HeaderLayout } from '~/Layouts';
-import { Home, Shinema, Coolzy, Flanner, About, Contact } from './../Pages';
+import { Home, Shinema, Coolzy, Flanner } from './../Pages';
 import config from '~/Configs';
 
 const publicRoutes = [
@@ -7,8 +7,6 @@ const publicRoutes = [
     { path: config.routes.shinema, component: Shinema, layout: HeaderLayout },
     { path: config.routes.coolzy, component: Coolzy, layout: HeaderLayout },
     { path: config.routes.flanner, component: Flanner, layout: HeaderLayout },
-    { path: config.routes.about, component: About, layout: HeaderLayout },
-    { path: config.routes.contact, component: Contact, layout: HeaderLayout },
 ];
 
 const privateRoute = [];
