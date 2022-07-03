@@ -1,5 +1,5 @@
 .wrapper {
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     z-index: 10;
@@ -13,11 +13,19 @@
 .inner {
     height: 100%;
     width: 100%;
-    padding: 0 30px;
+    padding: 0 50px;
     display: flex;
     align-items: center;
     flex-direction: row;
     justify-content: space-between;
+}
+
+.logo{
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 5px 10px;
+    font-family: 'Rubik Moonrocks', cursive;
+    cursor: pointer;
 }
 
 .nav-text{
@@ -41,7 +49,7 @@
 }
 
 .item-background{
-    background-color: #253246;
+    background-color: var(--primary-color);
     width: 0%;
     height: 100%;
     position: absolute;

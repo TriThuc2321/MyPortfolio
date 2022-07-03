@@ -15,7 +15,8 @@ $background-url: '../../../../Assets/Image/background.png';
         0% { top: 0px}
         100% { top: 30px}
     }
-    img{
+
+    .astronaut{
         margin-left: 10%;
         display: flex;  
         position: absolute;
@@ -53,9 +54,8 @@ $background-url: '../../../../Assets/Image/background.png';
         position: absolute;
         color: #fff;
         font-size: 45px;
-        font-family: 'Hind Siliguri', sans-serif;
+        font-family: 'Hind Siliguri', sans-serif;        
         text-align: end;
-        word-spacing: 3px;
 
         p{
             font-size: 20px;
@@ -82,7 +82,7 @@ $background-url: '../../../../Assets/Image/background.png';
         }
         
         & a:hover{
-            letter-spacing: 0.25em;
+            letter-spacing: 7px;
             background-color: #fff;
             color: #fff;
         }
@@ -91,7 +91,7 @@ $background-url: '../../../../Assets/Image/background.png';
             content: '';
             position: absolute;
             inset: 2px;
-            background-color: #131520;
+            background-color: var(--background-color);
         }
 
         a span {
@@ -112,7 +112,7 @@ $background-url: '../../../../Assets/Image/background.png';
             left: 80%;
             width: 8px;
             height: 3px;
-            background-color: #131520;
+            background-color: var(--background-color);
             transform: translate(-50%) skew(325deg);
             transition: 0.5s;
         }
@@ -129,7 +129,7 @@ $background-url: '../../../../Assets/Image/background.png';
             left: 20%;
             width: 8px;
             height: 3px;
-            background-color: #131520;
+            background-color: var(--background-color);
             transform: translate(-50%) skew(325deg);
             transition: 0.5s;
         }

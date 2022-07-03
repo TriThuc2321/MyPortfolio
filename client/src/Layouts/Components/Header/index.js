@@ -6,7 +6,9 @@ function Header() {
     return (
         <header className={cx('wrapper')}>
             <div className={cx('inner')}>
-                <p className={cx('logo')}>Thuc</p>
+                <a className={cx('logo')} href="./">
+                    Thuc
+                </a>
                 <NavText />
             </div>
         </header>

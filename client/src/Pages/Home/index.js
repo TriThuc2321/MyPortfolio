@@ -1,6 +1,7 @@
 import Project from './Components/Project';
 import Top from './Components/Top';
 import About from './Components/About';
+import Contact from './Components/Contact';
 
 import classNames from 'classnames/bind';
 import styles from './Home.module.scss';
@@ -12,6 +13,7 @@ function Home() {
             <Top />
             <About />
             <Project />
+            <Contact />
         </div>
     );
 }

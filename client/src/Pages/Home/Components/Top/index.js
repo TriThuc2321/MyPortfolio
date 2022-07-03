@@ -5,9 +5,9 @@ const cx = classNames.bind(styles);
 
 function Top() {
     return (
-        <div className={cx('container')}>
+        <div className={cx('container')} id="top">
             <div className={cx('rectangle')} />
-            <img src={astronaut} alt="" />
+            <img className={cx('astronaut')} src={astronaut} alt="" />
             <Content />
         </div>
     );
