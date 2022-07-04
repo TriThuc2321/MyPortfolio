@@ -1,3 +1,5 @@
+import CustomButton from '~/Components/CustomButton';
+
 import astronaut from '~/Assets/Image/astronaut.png';
 import classNames from 'classnames/bind';
 import styles from './Top.module.scss';
@@ -21,10 +23,11 @@ const Content = () => {
             <p>Hi, I'm Front - end developer</p>
             <div className={cx('line')} />
             <p>This is my portfolio and I hope you enjoy it!</p>
-            <a href="https://drive.google.com/drive/folders/1PKnFq45d63zs7BWs3Tw7xCzDyN3-B-Rw?usp=sharing">
-                <span>Resume</span>
-                <i></i>
-            </a>
+
+            <CustomButton
+                link="https://drive.google.com/drive/folders/1PKnFq45d63zs7BWs3Tw7xCzDyN3-B-Rw?usp=sharing"
+                title="Resume"
+            />
         </div>
     );
 };
