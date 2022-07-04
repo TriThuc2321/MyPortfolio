@@ -1,9 +1,17 @@
-import Header from '../Components/Header';
+import classNames from 'classnames/bind';
+import styles from './HeaderLayout.module.scss';
+const cx = classNames.bind(styles);
 
 function HeaderLayout({ children }) {
     return (
         <div>
-            <Header />
+            <header className={cx('wrapper')}>
+                <div className={cx('inner')}>
+                    <a className={cx('logo')} href="./">
+                        Thuc
+                    </a>
+                </div>
+            </header>
             <div>{children}</div>
         </div>
     );

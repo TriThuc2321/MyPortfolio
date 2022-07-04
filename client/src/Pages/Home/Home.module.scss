@@ -1,0 +1,7 @@
+$background-url: '../../Assets/Image/background.png';
+
+.container{
+    background-image: url($background-url);
+    background-repeat: 1;
+    background-size: cover;
+}

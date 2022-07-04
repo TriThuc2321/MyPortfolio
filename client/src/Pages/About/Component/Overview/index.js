@@ -1,5 +1,5 @@
 import * as React from 'react';
-import CustomButton from '~/Components/CustomButton';
+import { useNavigate } from 'react-router-dom';
 
 import Box from '@mui/material/Box';
 import Tooltip from '@mui/material/Tooltip';
@@ -7,18 +7,23 @@ import Tooltip from '@mui/material/Tooltip';
 import ThucImg from '~/Assets/Image/DSCF2659.JPG';
 
 import { FaFacebookSquare } from 'react-icons/fa';
-import { BsLinkedin } from 'react-icons/bs';
+import { BsLinkedin, BsArrowLeft } from 'react-icons/bs';
 import { ImGoogle2 } from 'react-icons/im';
 
 import classNames from 'classnames/bind';
-import styles from './About.module.scss';
+import styles from './Overview.module.scss';
 const cx = classNames.bind(styles);
 
-function About() {
+function Overview() {
+    let navigate = useNavigate();
     return (
-        <div className={cx('container')} id="about">
-            <img className={cx('thuc-img')} src={ThucImg} alt="" />
-            <Content />
+        <div className={cx('container')}>
+            <div className={cx('inner')}>
+                <img className={cx('thuc-img')} src={ThucImg} alt="" />
+                <Content />
+
+                <BsArrowLeft className={cx('turn-back')} size="4em" onClick={() => navigate(-1)} />
+            </div>
         </div>
     );
 }
@@ -32,8 +37,6 @@ const Content = () => {
 
             <div className={cx('contact')}>
                 <Icons />
-
-                <CustomButton link="/about" title="Show me more" />
             </div>
         </div>
     );
@@ -106,4 +109,4 @@ const Icons = () => {
     );
 };
 
-export default About;
+export default Overview;
