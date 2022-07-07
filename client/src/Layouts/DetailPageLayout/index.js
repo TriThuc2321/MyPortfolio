@@ -1,3 +1,4 @@
+import logo from '~/Assets/Image/mLogo.png';
 import Footer from '../Components/Footer';
 import classNames from 'classnames/bind';
 import styles from './DetailPageLayout.module.scss';
@@ -8,9 +9,7 @@ function DetailPageLayout({ children }) {
         <div>
             <header className={cx('wrapper')}>
                 <div className={cx('inner')}>
-                    <a className={cx('logo')} href="./">
-                        Thuc
-                    </a>
+                    <img className={cx('logo')} src={logo} alt="My logo" onClick={() => window.location.reload()} />
                 </div>
             </header>
             <div>{children}</div>
