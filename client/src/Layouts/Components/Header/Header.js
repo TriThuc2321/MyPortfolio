@@ -1,3 +1,4 @@
+import logo from '~/Assets/Image/mLogo.png';
 import classNames from 'classnames/bind';
 import styles from './Header.module.scss';
 const cx = classNames.bind(styles);
@@ -6,9 +7,7 @@ function Header() {
     return (
         <header className={cx('wrapper')}>
             <div className={cx('inner')}>
-                <a className={cx('logo')} href="./">
-                    Thuc
-                </a>
+                <img className={cx('logo')} src={logo} alt="My logo" />
                 <NavText />
             </div>
         </header>
