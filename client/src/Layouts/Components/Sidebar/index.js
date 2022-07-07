@@ -18,8 +18,6 @@ function Sidebar() {
             setClassNames(['item', 'item__selected', 'item', 'item']);
         } else if (hash === '#project') {
             setClassNames(['item', 'item', 'item__selected', 'item']);
-        } else if (hash === '#contact') {
-            setClassNames(['item', 'item', 'item', 'item__selected']);
         }
     }, [url]);
 
@@ -32,7 +30,6 @@ function Sidebar() {
             <div className={cx(classNames[0])} onClick={() => handleClick('/#top')} />
             <div className={cx(classNames[1])} onClick={() => handleClick('/#about')} />
             <div className={cx(classNames[2])} onClick={() => handleClick('/#project')} />
-            <div className={cx(classNames[3])} onClick={() => handleClick('/#contact')} />
         </div>
     );
 }

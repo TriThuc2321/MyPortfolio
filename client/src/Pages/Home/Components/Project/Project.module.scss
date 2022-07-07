@@ -1,0 +1,41 @@
+.container{
+    width: 90vw;
+    height: 100vh;
+    margin-left: 10vw;
+    display: flex;
+    color: rgb(215, 215, 215);
+    align-items: center;
+    justify-content: space-around;
+    right:0;
+
+    h1::before{
+        content: '';
+        width: 85px;
+        height: 2px;
+        display: flex;
+        background-color: rgb(215, 215, 215);
+    }
+
+    .thuc-img{
+        width: auto;
+        height: 60vh;
+        position: absolute;
+        left: 150px;
+    }
+
+    .content {
+        position: absolute;
+        z-index: 1;
+        right: 80px;
+
+        h1{
+            font-size: 70px;
+            margin-bottom: 20px;
+        }
+
+        p{
+            margin-bottom: 20px;
+        }
+    }
+
+}

@@ -32,11 +32,6 @@ const NavText = () => {
                 <div className={cx('item-background')} />
                 <a href="#project">Project</a>
             </div>
-
-            <div className={cx('item')}>
-                <div className={cx('item-background')} />
-                <a href="#contact">Contact</a>
-            </div>
         </div>
     );
 };

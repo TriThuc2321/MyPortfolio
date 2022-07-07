@@ -1,4 +1,3 @@
-import ThucImg from '~/Assets/Image/DSCF2659.JPG';
 import Grid from '@mui/material/Grid';
 
 import classNames from 'classnames/bind';
@@ -6,15 +5,6 @@ import styles from './Skill.module.scss';
 const cx = classNames.bind(styles);
 
 function Skill() {
-    return (
-        <div className={cx('container')}>
-            <img className={cx('thuc-img')} src={ThucImg} alt="" />
-            <Content />
-        </div>
-    );
-}
-
-const Content = () => {
     const mySkills = [
         {
             img: 'https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png',
@@ -51,8 +41,8 @@ const Content = () => {
     ];
 
     return (
-        <div className={cx('content')}>
-            <h2>SKILL SET</h2>
+        <div className={cx('container')}>
+            <Header />
             <Grid
                 container
                 spacing={2}
@@ -61,7 +51,6 @@ const Content = () => {
                     justifyContent: 'center',
                     alignItems: 'center',
                     width: '100%',
-                    height: '120%',
                 }}
             >
                 {mySkills &&
@@ -73,13 +62,24 @@ const Content = () => {
             </Grid>
         </div>
     );
+}
+
+const Header = () => {
+    return (
+        <div className={cx('header')}>
+            <h1>Skill set</h1>
+        </div>
+    );
 };
 
 const SkillItem = ({ item }) => {
     return (
         <div className={cx('content-item')}>
             <img src={item.img} alt="" />
-            <p>{item.name}</p>
+            <div style={{ width: '100%' }}>
+                <p>{item.name}</p>
+                <div className={cx('progress')} />
+            </div>
         </div>
     );
 };

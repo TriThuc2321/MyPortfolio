@@ -22,7 +22,7 @@ function Overview() {
                 <img className={cx('thuc-img')} src={ThucImg} alt="" />
                 <Content />
 
-                <BsArrowLeft className={cx('turn-back')} size="4em" onClick={() => navigate(-1)} />
+                <BsArrowLeft className={cx('turn-back')} size="4em" onClick={() => navigate('/#about')} />
             </div>
         </div>
     );
