@@ -7,7 +7,7 @@ function Header() {
     return (
         <header className={cx('wrapper')}>
             <div className={cx('inner')}>
-                <img className={cx('logo')} src={logo} alt="My logo" />
+                <img className={cx('logo')} src={logo} alt="My logo" onClick={() => window.location.reload()} />
                 <NavText />
             </div>
         </header>
