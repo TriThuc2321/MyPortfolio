@@ -7,6 +7,17 @@
     align-items: center;
     justify-content: space-around;
     right:0;
+    overflow: hidden;
+
+    @keyframes slideLeftToRightAnim {
+        0% { left: -500px}
+        100% { left: 0;}
+    }  
+    
+    @keyframes opacityAnim {
+        0% { opacity: 0}
+        100% { opacity: 1;}
+    }
 
     h1::before{
         content: '';
@@ -19,14 +30,18 @@
     .thuc-img{
         width: auto;
         height: 80vh;
-        margin: 0px 00px;
+        margin: 0px 0px;
+        animation: slideLeftToRightAnim 0.8s linear;
+        position: relative;
     }
 
     .content {
         padding: 60px;
+        animation: opacityAnim 1s linear;
 
         h1{
             margin-bottom: 30px;
+            font-size: 45px;
         }
 
         p{

@@ -8,6 +8,16 @@
     justify-content: space-around;
     right:0;
 
+    @keyframes slideLeftToRightAnim {
+        0% { left: -500px}
+        100% { left: 150px;}
+    }  
+    
+    @keyframes opacityAnim {
+        0% { opacity: 0}
+        100% { opacity: 1;}
+    }
+
     h1::before{
         content: '';
         width: 85px;
@@ -21,12 +31,14 @@
         height: 60vh;
         position: absolute;
         left: 150px;
+        animation: slideLeftToRightAnim 0.8s linear;
     }
 
     .content {
         position: absolute;
         z-index: 1;
         right: 80px;
+        //animation: opacityAnim 1s linear;
 
         h1{
             font-size: 70px;

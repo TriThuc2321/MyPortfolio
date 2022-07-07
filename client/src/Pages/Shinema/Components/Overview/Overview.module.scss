@@ -12,11 +12,21 @@ $background-url: '../../../../Assets/Image/background.png';
     justify-content: space-around;
     right:0;
 
+    @keyframes zoomImgAnim {
+        0% { height: 60vh; left: 150px;}
+        100% { height: 80vh; left: 100px;}
+    }
+
+    @keyframes zoomContentAnim {
+        0% { right: 67px; margin-top: 15px;}
+        100% { right: 80px; margin-top: 0;}
+    }
+
     .turn-back{
         position: absolute;
         top: 60px;
         left: 50px;
-        color: var(--primary-color);
+        color: var(--primary-color); 
         cursor: pointer;
     }
 
@@ -28,17 +38,19 @@ $background-url: '../../../../Assets/Image/background.png';
         background-color: rgb(215, 215, 215);
     }
 
-    .shinema-img{
+    .shinema-img{        
+        position: absolute;
         width: auto;
         height: 80vh;
-        position: absolute;
         left: 100px;
+        animation: zoomImgAnim 1s linear;
     }
 
     .content {
         position: absolute;
         z-index: 1;
         right: 80px;
+        animation: zoomContentAnim 1s linear;
 
         h1{
             font-size: 70px;

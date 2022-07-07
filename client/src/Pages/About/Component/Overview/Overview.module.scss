@@ -11,6 +11,11 @@ $background-url: '../../../../Assets/Image/background.png';
     color: rgb(238, 238, 238);
     position: relative;
 
+    @keyframes zoomAnim {
+        0% {height: 80vh; margin-left: 180px; margin-top: 80px;}
+        100% { height: 100vh; margin-left: 0px; margin-top:0}
+    } 
+
     .turn-back{
         position: absolute;
         top: 60px;
@@ -40,6 +45,7 @@ $background-url: '../../../../Assets/Image/background.png';
     .thuc-img{
         width: auto;
         height: 100vh;
+        animation: zoomAnim 0.5s linear;        
     }
 
     .content {

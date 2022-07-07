@@ -5,17 +5,28 @@
     width: 100vw;
     height: 100vh;   
     position: relative;
+     overflow: hidden;
 
     @keyframes imgAnim {
         0% { top: 60px}
         100% { top: 90px}
     }
 
+    @keyframes slideLeftToRightAnim {
+        0% { left: -500px}
+        100% { left: 0;}
+    }  
+    
+    @keyframes opacityAnim {
+        0% { opacity: 0}
+        100% { opacity: 1;}
+    }
+
     .astronaut{
         margin-left: 10%;
         display: flex;  
-        position: absolute;
-        animation: imgAnim 3s linear infinite alternate ;
+        position: relative;
+        animation: imgAnim 3s linear infinite alternate , slideLeftToRightAnim 0.8s linear;
     }
 
     .rectangle{
@@ -51,9 +62,10 @@
         font-size: 45px;
         font-family: 'Hind Siliguri', sans-serif;        
         text-align: end;
+        animation: opacityAnim 1s linear;
 
         p{
-            font-size: 20px;
+            font-size: 20px;  
         }
 
         .line{
@@ -62,7 +74,7 @@
             background-color: #fff;
             position: absolute;
             top: 50%;
-            right: 60%;
+            right: 45%;
             border-radius: 1.5px;
         }        
     }
