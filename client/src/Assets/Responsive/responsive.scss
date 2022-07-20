@@ -1,0 +1,38 @@
+$mobile-width: 46.25em;
+$tablet-width: 64em;
+
+@mixin mobile {
+    @media (max-width: #{$mobile-width}) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media (min-width: #{$mobile-width + 0.0625em}) and (max-width: #{$tablet-width}) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media (min-width: #{$tablet-width + 0.0625em}) {
+        @content;
+    }
+}
+
+@mixin media($keys...) {
+    @each $key in $keys {
+        @if ($key == mobile) {
+            @include mobile {
+                @content;
+            }
+        } @else if ($key == tablet) {
+            @include tablet {
+                @content;
+            }
+        } @else if ($key == desktop) {
+            @include desktop {
+                @content;
+            }
+        }
+    }
+}
