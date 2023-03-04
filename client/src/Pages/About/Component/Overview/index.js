@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom';
 import Box from '@mui/material/Box';
 import Tooltip from '@mui/material/Tooltip';
 
-import ThucImg from '~/Assets/Image/DSCF2659.JPG';
+import ThucImg from '~/Assets/Image/DSCF2659.jpg';
 
 import { FaFacebookSquare } from 'react-icons/fa';
 import { BsLinkedin, BsArrowLeft } from 'react-icons/bs';

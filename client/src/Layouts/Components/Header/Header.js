@@ -48,7 +48,7 @@ const Menu = () => {
 
     return (
         <div className={cx('menu')}>
-            <HiMenuAlt3 size="1.5em" onClick={() => setToggleMenu(!toggleMenu)} onBlur={() => console.log('blur')} />
+            <HiMenuAlt3 size="2em" onClick={() => setToggleMenu(!toggleMenu)} onBlur={() => console.log('blur')} />
             {toggleMenu && <ListMenu handleClose={handleClose} />}
         </div>
     );

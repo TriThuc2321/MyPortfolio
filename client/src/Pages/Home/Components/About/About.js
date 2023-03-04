@@ -2,7 +2,7 @@ import * as React from 'react';
 import CustomButton from '~/Components/CustomButton';
 import TooltipCustom from '~/Components/Tooltip/Tooltip';
 
-import ThucImg from '~/Assets/Image/DSCF2659.JPG';
+import ThucImg from '~/Assets/Image/DSCF2659.jpg';
 
 import { FaFacebookSquare } from 'react-icons/fa';
 import { BsLinkedin } from 'react-icons/bs';
